@@ -1,21 +1,30 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 100px;
+    padding: 80px 130px;
     gap: 30px;
 }
 
 .logo {
-    grid-column: span 2;
 }
 
 .header {
+    grid-column: span 2;
     display: flex;
-    gap: 30px;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.pages {
+    color: hsl(236, 13%, 42%);
+}
+
+.news {
+    color: hsl(236, 13%, 42%);
 }
 
 .web {
-    width: 700px;
+    width: 750px;
 }
 
 picture {
@@ -25,6 +34,54 @@ picture {
 .new-box {
     grid-row: span 2;
     background-color: hsl(240, 100%, 5%);
+}
+
+.new-box > .title {
+    color: hsl(36, 100%, 99%);;
+}
+
+.new-box > .news {
+    color: hsl(233, 8%, 79%);
+}
+
+#new {
+    color: hsl(35, 77%, 62%);
+}
+
+#bright-future {
+    color: hsl(240, 100%, 5%);
+}
+
+.head-news {
+    width: 300px;
+}
+
+.read-more {
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    color: hsl(36, 100%, 99%);
+}
+
+.buttom-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.buttom-box > .title {
+    color: hsl(240, 100%, 5%);
+}
+
+.number {
+    color: hsl(233, 8%, 79%);
+}
+
+.buttom-box > img {
+    grid-row: span 3;
+    width: 100px;
+}
+
+.buttom-box > p {
+    margin: 0px;
 }
 
 .pages {
