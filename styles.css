@@ -1,3 +1,18 @@
+@font-face {
+    font-family: inter-bold;
+    src: url("./assets/fonts/static/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: inter-extra-bold;
+    src: url("./assets/fonts/static/Inter-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: inter-regular;
+    src: url("./assets/fonts/static/Inter-Regular.ttf");
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -17,10 +32,17 @@ body {
 
 .pages {
     color: hsl(236, 13%, 42%);
+    font-family: inter-regular;
+}
+
+.title {
+    font-family: inter-bold;
 }
 
 .news {
     color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    font-family: inter-regular;
 }
 
 .web {
@@ -34,22 +56,36 @@ picture {
 .new-box {
     grid-row: span 2;
     background-color: hsl(240, 100%, 5%);
+    padding: 30px;
+    padding-top: 10px;
 }
 
 .new-box > .title {
-    color: hsl(36, 100%, 99%);;
+    color: hsl(36, 100%, 99%);
 }
 
 .new-box > .news {
     color: hsl(233, 8%, 79%);
 }
 
+.new-box > hr {
+    border: none;
+    border-top: 0.5px solid hsl(233, 8%, 79%);
+    margin: 30px 0px;
+}
+
 #new {
     color: hsl(35, 77%, 62%);
+    font-family: inter-bold;
+    font-size: 2rem;
 }
 
 #bright-future {
     color: hsl(240, 100%, 5%);
+    font-family: inter-extra-bold;
+    font-size: 2.8rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .head-news {
@@ -60,19 +96,31 @@ picture {
     background-color: hsl(5, 85%, 63%);
     border: none;
     color: hsl(36, 100%, 99%);
+    padding: 15px 25px;
+    font-family: inter-regular;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 .buttom-box {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-top: 30px;
 }
 
 .buttom-box > .title {
     color: hsl(240, 100%, 5%);
 }
 
+.buttom-box > .news {
+    width: 200px;
+}
+
 .number {
     color: hsl(233, 8%, 79%);
+    font-family: inter-bold;
+    font-size: 2rem;
 }
 
 .buttom-box > img {
