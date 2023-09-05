@@ -20,9 +20,6 @@ body {
     gap: 30px;
 }
 
-.logo {
-}
-
 .header {
     grid-column: span 2;
     display: flex;
@@ -138,4 +135,37 @@ picture {
 
 .icon {
     display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .web {
+        width: 100%;
+    }
+
+    #bright-future {
+        order: 1;
+    }
+
+    .head-news {
+        order: 2;
+    }
+
+    .new-box {
+        order: 3;
+    }
+
+    .buttom-box {
+        order: 4;
+    }
 }
