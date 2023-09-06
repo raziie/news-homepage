@@ -29,3 +29,17 @@ $(".new-box > .title").on("mouseover", function () {
 $(".new-box > .title").on("mouseout", function () {
     $(this).css("color", "hsl(36, 100%, 99%)")
 });
+
+$(".lines").on("click", function() {
+    $(".menu").addClass("show-menu");
+    $(this).hide();
+    $(".cross").show();
+    $(".menu").show();
+    // $("body").addClass("shaded");
+});
+
+$(".cross").on("click", function() {
+    $(this).hide();
+    $(".lines").show();
+    $(".menu").hide();
+});

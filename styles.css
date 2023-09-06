@@ -22,10 +22,13 @@ body {
 
 .header {
     grid-column: span 2;
+}
+
+.menu {
     display: flex;
     justify-content: flex-end;
     gap: 40px;
-}
+} 
 
 .pages {
     color: hsl(236, 13%, 42%);
@@ -149,8 +152,29 @@ picture {
         padding-bottom: 50px;
     }
 
-    .header {
+    .shaded {
+        filter: opacity(0.2) drop-shadow(0 0 hsl(240, 100%, 5%));
+    }
+
+    .menu {
         display: none;
+    }
+
+    .show-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 1;
+        background-color: hsl(36, 100%, 99%);
+        position: absolute;
+        left: 30%;
+        width: 70%;
+        height: 100%;
+        padding-left: 30px;
+    }
+
+    .pages {
+        font-family: inter-bold;
     }
 
     .web {
@@ -171,5 +195,18 @@ picture {
 
     .buttom-box {
         order: 4;
+    }
+
+    .lines {
+        display: inline-block;
+        position: relative;
+        top: -60px;
+        left: 90%;
+    }
+
+    .cross {
+        position: relative;
+        top: -60px;
+        left: 90%;
     }
 }
