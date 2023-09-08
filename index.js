@@ -35,11 +35,12 @@ $(".lines").on("click", function() {
     $(this).hide();
     $(".cross").show();
     $(".menu").show();
-    // $("body").addClass("shaded");
+    $("body > *").not("body > .header").addClass("shaded");
 });
 
 $(".cross").on("click", function() {
     $(this).hide();
     $(".lines").show();
     $(".menu").hide();
+    $("body > *").removeClass("shaded");
 });
